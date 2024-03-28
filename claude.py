@@ -108,7 +108,7 @@ def main():
     st.write(translate_text("Courriel : alvinhakizimana@gmail.com / alvinjeanclaude@yahoo.co.uk",target_language))
 
     st.sidebar.subheader(translate_text("Photo de Profil", target_language))
-    st.sidebar.image("C:\\Users\\alvin\\Desktop\\CLAUDE\\IMG_3074.JPG",caption=translate_text ("Photo de profil", target_language))
+    st.sidebar.image("IMG_3074.JPG",caption=translate_text ("Photo de profil", target_language))
 
     st.write(translate_text("🖐️ Restons en contact pour des mises à jour et des liens utiles sur ce que             j'apprends, lis, écris et construis.", target_language))
     email = st.sidebar.text_input(translate_text("Entrez votre adresse e-mail:", target_language))
