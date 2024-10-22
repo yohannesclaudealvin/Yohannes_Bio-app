@@ -5,8 +5,8 @@ import pdfkit
 # Fonction pour traduire le texte
 def translate_text(text, target_language):
     translator = GoogleTranslator(target_lang=target_language)
-    translation = translator.translate(text, dest=target_language)
-    return translation.text
+    translation = translator.translate(text)
+    return translation
 
 def main():
     # Sélection de la langue cible
