@@ -1,10 +1,10 @@
 import streamlit as st
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 import pdfkit
 
 # Fonction pour traduire le texte
 def translate_text(text, target_language):
-    translator = Translator()
+    translator = GoogleTranslator(target_lang=target_language)
     translation = translator.translate(text, dest=target_language)
     return translation.text
 
